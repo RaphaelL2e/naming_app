@@ -6,7 +6,7 @@
 
 .header {
   text-align: center;
-  margin-bottom: 60rpx;
+  margin-bottom: 40rpx;
 }
 
 .title {
@@ -14,7 +14,7 @@
   font-size: 48rpx;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 20rpx;
+  margin-bottom: 10rpx;
 }
 
 .subtitle {
@@ -26,7 +26,7 @@
   background: #fff;
   border-radius: 20rpx;
   padding: 30rpx;
-  margin-bottom: 40rpx;
+  margin-bottom: 30rpx;
 }
 
 .surname-input {
@@ -35,6 +35,21 @@
   padding: 20rpx;
   border: 2rpx solid #ddd;
   border-radius: 10rpx;
+}
+
+.gender-section {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20rpx;
+  padding: 20rpx 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.gender-option {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 40rpx;
+  color: #fff;
+  font-size: 28rpx;
 }
 
 .generate-btn {
@@ -63,29 +78,47 @@
 
 .name-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20rpx;
 }
 
 .name-item {
-  width: 45%;
-  background: #f5f5f5;
+  background: #f8f8f8;
   border-radius: 15rpx;
-  padding: 20rpx;
+  padding: 25rpx;
+}
+
+.name-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
 }
 
 .name-text {
-  display: block;
   font-size: 40rpx;
   font-weight: bold;
   color: #667eea;
-  text-align: center;
+}
+
+.score-badge {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 24rpx;
+  padding: 8rpx 16rpx;
+  border-radius: 20rpx;
 }
 
 .name-meaning {
   display: block;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #666;
-  text-align: center;
-  margin-top: 10rpx;
+  margin-bottom: 8rpx;
+}
+
+.name-origin {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  font-style: italic;
 }

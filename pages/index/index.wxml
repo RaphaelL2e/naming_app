@@ -14,15 +14,30 @@
     />
   </view>
 
+  <view class="gender-section">
+    <radio-group bindchange="onGenderChange">
+      <label class="gender-option">
+        <radio value="boy" checked="{{gender === 'boy'}}" color="#667eea"/>男
+      </label>
+      <label class="gender-option">
+        <radio value="girl" checked="{{gender === 'girl'}}" color="#e91e63"/>女
+      </label>
+    </radio-group>
+  </view>
+
   <button class="generate-btn" bindtap="generateNames">生成名字</button>
 
   <view class="result-section" wx:if="{{names.length > 0}}">
     <text class="result-title">推荐名字：</text>
     <view class="name-list">
       <block wx:for="{{names}}" wx:key="index">
-        <view class="name-item">
-          <text class="name-text">{{surname}}{{item}}</text>
+        <view class="name-item" bindtap="showDetail" data-name="{{item}}" data-index="{{index}}">
+          <view class="name-main">
+            <text class="name-text">{{surname}}{{item}}</text>
+            <text class="score-badge">评分: {{scores[index]}}分</text>
+          </view>
           <text class="name-meaning">{{meanings[index]}}</text>
+          <text class="name-origin" wx:if="{{origins[index]}}">📖 {{origins[index]}}</text>
         </view>
       </block>
     </view>
