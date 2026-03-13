@@ -1,0 +1,135 @@
+.container {
+  padding: 30rpx;
+  background: linear-gradient(180deg, #ff6b6b 0%, #ffa500 100%);
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10rpx;
+}
+
+.subtitle {
+  font-size: 26rpx;
+  color: rgba(255,255,255,0.8);
+}
+
+.tabs {
+  display: flex;
+  background: rgba(255,255,255,0.3);
+  border-radius: 40rpx;
+  padding: 8rpx;
+  margin-bottom: 30rpx;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 35rpx;
+}
+
+.tab.active {
+  background: #fff;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.ranking-list {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 15rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.ranking-item:last-child {
+  border-bottom: none;
+}
+
+.rank-num {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #999;
+  background: #f5f5f5;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.rank-num.top {
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  color: #fff;
+}
+
+.rank-num:nth-child(1) {
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+}
+
+.rank-num:nth-child(2) {
+  background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+}
+
+.rank-num:nth-child(3) {
+  background: linear-gradient(135deg, #cd7f32, #b87333);
+}
+
+.rank-info {
+  flex: 1;
+}
+
+.rank-name {
+  display: block;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.rank-meaning {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+
+.rank-hot {
+  text-align: right;
+}
+
+.hot-num {
+  display: block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.hot-label {
+  display: block;
+  font-size: 22rpx;
+  color: #999;
+}
+
+.update-time {
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.7);
+}

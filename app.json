@@ -2,8 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/poetic/poetic",
-    "pages/favorites/favorites",
-    "pages/compare/compare"
+    "pages/ranking/ranking",
+    "pages/compare/compare",
+    "pages/favorites/favorites"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,6 +22,12 @@
         "text": "取名",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "热门",
+        "iconPath": "images/fire.png",
+        "selectedIconPath": "images/fire-active.png"
       },
       {
         "pagePath": "pages/poetic/poetic",

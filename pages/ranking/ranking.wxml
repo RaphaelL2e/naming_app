@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="header">
+    <text class="title">🔥 热门榜单</text>
+    <text class="subtitle">2026最受欢迎的名字排行榜</text>
+  </view>
+
+  <view class="tabs">
+    <view class="tab {{currentTab==0 ? 'active' : ''}}" bindtap="switchTab" data-idx="0">男孩</view>
+    <view class="tab {{currentTab==1 ? 'active' : ''}}" bindtap="switchTab" data-idx="1">女孩</view>
+    <view class="tab {{currentTab==2 ? 'active' : ''}}" bindtap="switchTab" data-idx="2">诗意</view>
+  </view>
+
+  <view class="ranking-list">
+    <block wx:for="{{ranking}}" wx:key="index">
+      <view class="ranking-item">
+        <view class="rank-num {{index < 3 ? 'top' : ''}}">{{index + 1}}</view>
+        <view class="rank-info">
+          <text class="rank-name">{{item.name}}</text>
+          <text class="rank-meaning">{{item.meaning}}</text>
+        </view>
+        <view class="rank-hot">
+          <text class="hot-num">{{item.hot}}</text>
+          <text class="hot-label">人在查</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="update-time">
+    <text>最后更新：{{updateTime}}</text>
+  </view>
+</view>
