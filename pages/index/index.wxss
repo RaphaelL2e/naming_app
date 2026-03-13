@@ -101,8 +101,21 @@
   color: #667eea;
 }
 
+.score-row {
+  display: flex;
+  gap: 10rpx;
+}
+
 .score-badge {
   background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 24rpx;
+  padding: 8rpx 16rpx;
+  border-radius: 20rpx;
+}
+
+.wuxing-badge {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
   color: #fff;
   font-size: 24rpx;
   padding: 8rpx 16rpx;
@@ -122,6 +135,7 @@
   color: #999;
   font-style: italic;
 }
+
 .share-btn {
   background: #07c160;
   color: #fff;
