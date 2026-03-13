@@ -1,12 +1,39 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/poetic/poetic",
+    "pages/favorites/favorites"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#667eea",
     "navigationBarTitleText": "取名神器",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#667eea",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "取名",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/poetic/poetic",
+        "text": "诗意",
+        "iconPath": "images/poem.png",
+        "selectedIconPath": "images/poem-active.png"
+      },
+      {
+        "pagePath": "pages/favorites/favorites",
+        "text": "收藏",
+        "iconPath": "images/star.png",
+        "selectedIconPath": "images/star-active.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

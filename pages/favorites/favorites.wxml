@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="header">
+    <text class="title">⭐ 我的收藏</text>
+    <text class="subtitle">收藏的名字都在这里</text>
+  </view>
+
+  <view class="result-section" wx:if="{{favorites.length > 0}}">
+    <view class="name-list">
+      <block wx:for="{{favorites}}" wx:key="index">
+        <view class="name-item">
+          <view class="name-main">
+            <text class="name-text">{{item.name}}</text>
+            <text class="delete-btn" bindtap="removeFavorite" data-index="{{index}}">🗑️ 删除</text>
+          </view>
+          <text class="name-meaning">{{item.meaning}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="empty" wx:else>
+    <text class="empty-icon">📭</text>
+    <text class="empty-text">还没有收藏哦</text>
+    <text class="empty-hint">去首页或诗意页收藏喜欢的名字吧～</text>
+  </view>
+</view>
