@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="header">
+    <text class="title">👶 取名神器</text>
+    <text class="subtitle">输入姓氏，自动生成好名字</text>
+  </view>
+
+  <view class="input-section">
+    <input 
+      class="surname-input" 
+      placeholder="请输入姓氏" 
+      maxlength="1"
+      bindinput="onSurnameInput"
+      value="{{surname}}"
+    />
+  </view>
+
+  <button class="generate-btn" bindtap="generateNames">生成名字</button>
+
+  <view class="result-section" wx:if="{{names.length > 0}}">
+    <text class="result-title">推荐名字：</text>
+    <view class="name-list">
+      <block wx:for="{{names}}" wx:key="index">
+        <view class="name-item">
+          <text class="name-text">{{surname}}{{item}}</text>
+          <text class="name-meaning">{{meanings[index]}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
