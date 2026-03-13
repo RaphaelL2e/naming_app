@@ -1,0 +1,147 @@
+.container {
+  padding: 40rpx;
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: rgba(255,255,255,0.8);
+}
+
+.input-section {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.input-group {
+  margin-bottom: 20rpx;
+}
+
+.input-label {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.name-input {
+  font-size: 36rpx;
+  padding: 20rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.vs {
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fa709a;
+  margin: 20rpx 0;
+}
+
+.compare-btn {
+  background: #fff;
+  color: #fa709a;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-radius: 50rpx;
+  padding: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.result-section {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+.winner {
+  text-align: center;
+  padding: 30rpx;
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+}
+
+.winner-label {
+  display: block;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.winner-name {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #fff;
+  margin: 10rpx 0;
+}
+
+.winner-reason {
+  display: block;
+  font-size: 26rpx;
+  color: rgba(255,255,255,0.9);
+}
+
+.score-comparison {
+  margin-bottom: 30rpx;
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.score-name {
+  width: 150rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.score-bar {
+  flex: 1;
+  height: 20rpx;
+  background: #eee;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 0 20rpx;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 10rpx;
+  transition: width 0.3s;
+}
+
+.score-value {
+  width: 100rpx;
+  font-size: 28rpx;
+  color: #666;
+  text-align: right;
+}
+
+.share-btn {
+  background: #07c160;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+}

@@ -122,3 +122,12 @@ Page({
     });
   }
 });
+// 分享
+  onShareAppMessage() {
+    const { names, surname, scores } = this.data;
+    const topName = names[0] || '好名字';
+    return {
+      title: `给我家宝宝取了个${topName}的名字，快来看看！`,
+      path: '/pages/index/index'
+    };
+  }

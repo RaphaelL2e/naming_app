@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/poetic/poetic",
-    "pages/favorites/favorites"
+    "pages/favorites/favorites",
+    "pages/compare/compare"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,6 +27,12 @@
         "text": "诗意",
         "iconPath": "images/poem.png",
         "selectedIconPath": "images/poem-active.png"
+      },
+      {
+        "pagePath": "pages/compare/compare",
+        "text": "对比",
+        "iconPath": "images/compare.png",
+        "selectedIconPath": "images/compare-active.png"
       },
       {
         "pagePath": "pages/favorites/favorites",

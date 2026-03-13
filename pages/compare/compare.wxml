@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="header">
+    <text class="title">⚔️ 名字对比</text>
+    <text class="subtitle">两个名字PK，看看哪个更好</text>
+  </view>
+
+  <view class="input-section">
+    <view class="input-group">
+      <text class="input-label">名字1</text>
+      <input class="name-input" placeholder="输入名字1" bindinput="onName1Input" value="{{name1}}"/>
+    </view>
+    <view class="vs">VS</view>
+    <view class="input-group">
+      <text class="input-label">名字2</text>
+      <input class="name-input" placeholder="输入名字2" bindinput="onName2Input" value="{{name2}}"/>
+    </view>
+  </view>
+
+  <button class="compare-btn" bindtap="compareNames">开始对比</button>
+
+  <view class="result-section" wx:if="{{result}}">
+    <view class="winner">
+      <text class="winner-label">🏆 胜出</text>
+      <text class="winner-name">{{result.winner}}</text>
+      <text class="winner-reason">{{result.reason}}</text>
+    </view>
+    
+    <view class="score-comparison">
+      <view class="score-item">
+        <text class="score-name">{{name1}}</text>
+        <view class="score-bar">
+          <view class="score-fill" style="width: {{result.score1}}%; background: #667eea;"></view>
+        </view>
+        <text class="score-value">{{result.score1}}分</text>
+      </view>
+      <view class="score-item">
+        <text class="score-name">{{name2}}</text>
+        <view class="score-bar">
+          <view class="score-fill" style="width: {{result.score2}}%; background: #f5576c;"></view>
+        </view>
+        <text class="score-value">{{result.score2}}分</text>
+      </view>
+    </view>
+
+    <button class="share-btn" open-type="share">📤 一键分享给好友</button>
+  </view>
+</view>
