@@ -13,7 +13,7 @@
   <view class="ranking-list">
     <block wx:for="{{ranking}}" wx:key="index">
       <view class="ranking-item">
-        <view class="rank-num {{index < 3 ? 'top' : ''}}">{{index + 1}}</view>
+        <view class="rank-num {{index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : ''}}">{{index + 1}}</view>
         <view class="rank-info">
           <text class="rank-name">{{item.name}}</text>
           <text class="rank-meaning">{{item.meaning}}</text>
