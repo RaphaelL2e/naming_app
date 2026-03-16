@@ -13,39 +13,29 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#999",
+    "color": "#999999",
     "selectedColor": "#667eea",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "取名",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-active.png"
+        "text": "取名"
       },
       {
         "pagePath": "pages/ranking/ranking",
-        "text": "热门",
-        "iconPath": "images/fire.png",
-        "selectedIconPath": "images/fire-active.png"
+        "text": "热门"
       },
       {
         "pagePath": "pages/poetic/poetic",
-        "text": "诗意",
-        "iconPath": "images/poem.png",
-        "selectedIconPath": "images/poem-active.png"
+        "text": "诗意"
       },
       {
         "pagePath": "pages/compare/compare",
-        "text": "对比",
-        "iconPath": "images/compare.png",
-        "selectedIconPath": "images/compare-active.png"
+        "text": "对比"
       },
       {
         "pagePath": "pages/favorites/favorites",
-        "text": "收藏",
-        "iconPath": "images/star.png",
-        "selectedIconPath": "images/star-active.png"
+        "text": "收藏"
       }
     ]
   },
