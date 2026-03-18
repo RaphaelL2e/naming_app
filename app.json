@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/detail/detail",
     "pages/poetic/poetic",
     "pages/ranking/ranking",
     "pages/compare/compare",

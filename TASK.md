@@ -1,50 +1,31 @@
-# UI 样式优化任务
+# 名字解读功能 - 新任务
 
 ## 项目
 naming_app (微信小程序 - 取名神器)
 
-## 任务
-UI 样式优化
+## 新功能：名字解读
 
-## 优化要求
+### 功能描述
+- 点击生成的名字，展示详细寓意、出处、典故
+- 五行分析解读
+- 性格特点分析
 
-### 1. 统一样式
-- 统一配色、圆角、阴影
-- 建立统一的设计规范
+### 需要添加
+1. 新页面：`pages/detail/detail` - 名字详情页
+2. 数据增强：在 utils/nameData.js 中添加名字寓意库
+3. 首页点击名字跳转详情
 
-### 2. 动效
-- 添加按钮点击动画
-- 添加卡片悬停效果
-- 添加页面切换动画
+### 名字寓意库格式
+```javascript
+nameMeanings: {
+  '伟': { meaning: '伟大、卓越', origin: '出自《论语》', personality: '胸怀宽广，有领导力' },
+  '杰': { meaning: '杰出、优秀', origin: '汉代常用字', personality: '才华出众，志向远大' },
+  // ... 更多
+}
+```
 
-### 3. 卡片升级
-- 增加立体感
-- 添加渐变边框
-- 优化阴影效果
+### 文件修改
+- utils/nameData.js - 添加寓意数据
+- pages/index/index.wxml - 点击名字跳转详情
+- pages/detail/ - 新建详情页面
 
-### 4. 字体
-- 优化字号层级
-- 提高可读性
-
-### 5. 图标
-- 增加 loading 动画
-- 添加空状态插图
-
-### 6. 间距
-- 优化留白
-- 增加呼吸感
-
-## 文件位置
-/root/.openclaw/agents/33/naming_app/
-
-## 需要优化的页面
-- pages/index/index (首页)
-- pages/ranking/ranking (热门)
-- pages/poetic/poetic (诗意)
-- pages/compare/compare (对比)
-- pages/favorites/favorites (收藏)
-
-## 要求
-- 保持微信小程序兼容性
-- 确保在不同尺寸设备上正常显示
-- 优化后自行测试

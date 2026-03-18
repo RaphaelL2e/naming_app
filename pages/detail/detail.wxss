@@ -1,0 +1,167 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30rpx;
+}
+
+.name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 30rpx;
+  padding: 60rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 20rpx 60rpx rgba(0,0,0,0.2);
+}
+
+.surname {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20rpx;
+}
+
+.name {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.score-card, .meaning-card, .wuxing-card {
+  background: white;
+  border-radius: 30rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 10rpx 40rpx rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.score-title {
+  font-size: 32rpx;
+  color: #666;
+}
+
+.score-value {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.item-label {
+  width: 100rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 16rpx;
+  background: #f0f0f0;
+  border-radius: 8rpx;
+  margin: 0 20rpx;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 8rpx;
+}
+
+.item-value {
+  width: 60rpx;
+  font-size: 28rpx;
+  color: #333;
+  text-align: right;
+}
+
+.meaning-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+.meaning-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meaning-item .label {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.meaning-item .value {
+  font-size: 30rpx;
+  color: #333;
+  line-height: 1.6;
+}
+
+.wuxing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.wuxing-badge {
+  display: inline-block;
+  padding: 15rpx 30rpx;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.wuxing-desc {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  gap: 30rpx;
+}
+
+.btn-favorite, .btn-share {
+  flex: 1;
+  padding: 30rpx;
+  border-radius: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.btn-favorite {
+  background: white;
+  color: #f5576c;
+  border: none;
+}
+
+.btn-share {
+  background: rgba(255,255,255,0.3);
+  color: white;
+  border: 2rpx solid white;
+}

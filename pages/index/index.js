@@ -126,6 +126,14 @@ Page({
 
   // 查看详情
   showDetail(e) {
+    // 新增：跳转到详情页
+    const fullName = this.data.surname + e.currentTarget.dataset.name;
+    wx.navigateTo({
+      url: "/pages/detail/detail?name=" + fullName
+    });
+    return;
+    // 原弹窗代码（已注释）
+    // showDetail_old(e) {
     const name = e.currentTarget.dataset.name;
     const index = e.currentTarget.dataset.index;
     const score = this.data.scores[index];

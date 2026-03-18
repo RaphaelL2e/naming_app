@@ -1,0 +1,79 @@
+<view class="container">
+  <!-- 名字展示 -->
+  <view class="name-card">
+    <text class="surname">{{surname}}</text>
+    <text class="name">{{name}}</text>
+  </view>
+  
+  <!-- 评分卡片 -->
+  <view class="score-card">
+    <view class="score-header">
+      <text class="score-title">名字评分</text>
+      <text class="score-value">{{score.总分}}分</text>
+    </view>
+    <view class="score-items">
+      <view class="score-item">
+        <text class="item-label">寓意</text>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{score.寓意}}%"></view>
+        </view>
+        <text class="item-value">{{score.寓意}}</text>
+      </view>
+      <view class="score-item">
+        <text class="item-label">读音</text>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{score.读音}}%"></view>
+        </view>
+        <text class="item-value">{{score.读音}}</text>
+      </view>
+      <view class="score-item">
+        <text class="item-label">五行</text>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{score.五行}}%"></view>
+        </view>
+        <text class="item-value">{{score.五行}}</text>
+      </view>
+      <view class="score-item">
+        <text class="item-label">文化</text>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{score.文化}}%"></view>
+        </view>
+        <text class="item-value">{{score.文化}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 寓意解读 -->
+  <view class="meaning-card">
+    <view class="card-title">寓意解读</view>
+    <view class="meaning-content">
+      <view class="meaning-item">
+        <text class="label">基本含义</text>
+        <text class="value">{{meaning.meaning}}</text>
+      </view>
+      <view class="meaning-item">
+        <text class="label">出处典故</text>
+        <text class="value">{{meaning.origin}}</text>
+      </view>
+      <view class="meaning-item">
+        <text class="label">性格特点</text>
+        <text class="value">{{meaning.personality}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 五行分析 -->
+  <view class="wuxing-card">
+    <view class="card-title">五行分析</view>
+    <view class="wuxing-content">
+      <view class="wuxing-badge">{{score.nameWuxing}}属性</view>
+      <text class="wuxing-desc">{{wuxingPersonality}}</text>
+    </view>
+  </view>
+  
+  <!-- 操作按钮 -->
+  <view class="actions">
+    <button class="btn-favorite" bindtap="addToFavorites">❤️ 收藏此名</button>
+    <button class="btn-share" open-type="share">📤 分享给朋友</button>
+  </view>
+</view>
